@@ -1,0 +1,36 @@
+{
+  "auth": {
+    "username": "${LT_USERNAME}",
+    "access_key": "${LT_ACCESS_KEY}"
+  },
+  "browsers": [
+    {
+      "browser": "Chrome",
+      "versions": ["latest", "latest-1"],
+      "platform": "Windows 10"
+    },
+    {
+      "browser": "Firefox",
+      "versions": ["latest"],
+      "platform": "Windows 10"
+    },
+    {
+      "browser": "Safari",
+      "versions": ["latest"],
+      "platform": "macOS Monterey"
+    }
+  ],
+  "run_settings": {
+    "cypress_config_file": "cypress.json",
+    "build_name": "React Snapshot Testing",
+    "parallels": 3,
+    "specs": "./src/**/*.test.js",
+    "npm_dependencies": {
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0"
+    }
+  },
+  "tunnel_settings": {
+    "tunnel": false
+  }
+}

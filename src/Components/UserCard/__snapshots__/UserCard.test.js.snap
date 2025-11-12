@@ -1,0 +1,502 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserCard Snapshot Tests renders complete user card with all props 1`] = `
+<div
+  class="user-card user-card--light"
+>
+  <div
+    class="user-card__header"
+  >
+    <div
+      class="user-card__avatar-placeholder"
+    >
+      V
+    </div>
+    <div
+      class="user-card__status"
+    >
+      <span
+        class="status-indicator status-indicator--active"
+      />
+      Active
+    </div>
+  </div>
+  <div
+    class="user-card__body"
+  >
+    <h2
+      class="user-card__name"
+    >
+      Victor Uma
+    </h2>
+    <p
+      class="user-card__role"
+    >
+      Senior Developer
+    </p>
+    <p
+      class="user-card__email"
+    >
+      <span
+        class="user-card__label"
+      >
+        Email:
+      </span>
+       
+      Victor.uma@example.com
+    </p>
+    <p
+      class="user-card__bio"
+    >
+      Senior Software Engineer with 10 years of experience in web development and technical writing.
+    </p>
+  </div>
+  <div
+    class="user-card__footer"
+  >
+    <button
+      aria-label="Contact Victor Uma"
+      class="user-card__button"
+    >
+      Contact
+    </button>
+  </div>
+</div>
+`;
+
+exports[`UserCard Snapshot Tests renders empty state when no user provided 1`] = `
+<div
+  class="user-card user-card--empty"
+>
+  <p>
+    NO USER DATA DETAILS
+  </p>
+</div>
+`;
+
+exports[`UserCard Snapshot Tests renders inactive user 1`] = `
+<div
+  class="user-card user-card--light"
+>
+  <div
+    class="user-card__header"
+  >
+    <div
+      class="user-card__avatar-placeholder"
+    >
+      V
+    </div>
+    <div
+      class="user-card__status"
+    >
+      <span
+        class="status-indicator status-indicator--inactive"
+      />
+      Inactive
+    </div>
+  </div>
+  <div
+    class="user-card__body"
+  >
+    <h2
+      class="user-card__name"
+    >
+      Victor Uma
+    </h2>
+    <p
+      class="user-card__role"
+    >
+      Senior Developer
+    </p>
+    <p
+      class="user-card__email"
+    >
+      <span
+        class="user-card__label"
+      >
+        Email:
+      </span>
+       
+      Victor.uma@example.com
+    </p>
+    <p
+      class="user-card__bio"
+    >
+      Senior Software Engineer with 10 years of experience in web development and technical writing.
+    </p>
+  </div>
+  <div
+    class="user-card__footer"
+  >
+    <button
+      aria-label="Contact Victor Uma"
+      class="user-card__button"
+    >
+      Contact
+    </button>
+  </div>
+</div>
+`;
+
+exports[`UserCard Snapshot Tests renders minimal user card 1`] = `
+<div
+  class="user-card user-card--light"
+>
+  <div
+    class="user-card__header"
+  >
+    <div
+      class="user-card__avatar-placeholder"
+    >
+      J
+    </div>
+    <div
+      class="user-card__status"
+    >
+      <span
+        class="status-indicator status-indicator--inactive"
+      />
+      Inactive
+    </div>
+  </div>
+  <div
+    class="user-card__body"
+  >
+    <h2
+      class="user-card__name"
+    >
+      John Smith
+    </h2>
+    <p
+      class="user-card__role"
+    >
+      Junior Developer
+    </p>
+    <p
+      class="user-card__email"
+    >
+      <span
+        class="user-card__label"
+      >
+        Email:
+      </span>
+       
+      john.smith@example.com
+    </p>
+  </div>
+  <div
+    class="user-card__footer"
+  >
+    <button
+      aria-label="Contact John Smith"
+      class="user-card__button"
+    >
+      Contact
+    </button>
+  </div>
+</div>
+`;
+
+exports[`UserCard Snapshot Tests renders user card in dark theme 1`] = `
+<div
+  class="user-card user-card--dark"
+>
+  <div
+    class="user-card__header"
+  >
+    <div
+      class="user-card__avatar-placeholder"
+    >
+      V
+    </div>
+    <div
+      class="user-card__status"
+    >
+      <span
+        class="status-indicator status-indicator--active"
+      />
+      Active
+    </div>
+  </div>
+  <div
+    class="user-card__body"
+  >
+    <h2
+      class="user-card__name"
+    >
+      Victor Uma
+    </h2>
+    <p
+      class="user-card__role"
+    >
+      Senior Developer
+    </p>
+    <p
+      class="user-card__email"
+    >
+      <span
+        class="user-card__label"
+      >
+        Email:
+      </span>
+       
+      Victor.uma@example.com
+    </p>
+    <p
+      class="user-card__bio"
+    >
+      Senior Software Engineer with 10 years of experience in web development and technical writing.
+    </p>
+  </div>
+  <div
+    class="user-card__footer"
+  >
+    <button
+      aria-label="Contact Victor Uma"
+      class="user-card__button"
+    >
+      Contact
+    </button>
+  </div>
+</div>
+`;
+
+exports[`UserCard Snapshot Tests renders user card without avatar 1`] = `
+<div
+  class="user-card user-card--light"
+>
+  <div
+    class="user-card__header"
+  >
+    <div
+      class="user-card__avatar-placeholder"
+    >
+      A
+    </div>
+    <div
+      class="user-card__status"
+    >
+      <span
+        class="status-indicator status-indicator--active"
+      />
+      Active
+    </div>
+  </div>
+  <div
+    class="user-card__body"
+  >
+    <h2
+      class="user-card__name"
+    >
+      Alice Johnson
+    </h2>
+    <p
+      class="user-card__role"
+    >
+      Product Manager
+    </p>
+    <p
+      class="user-card__email"
+    >
+      <span
+        class="user-card__label"
+      >
+        Email:
+      </span>
+       
+      alice@example.com
+    </p>
+    <p
+      class="user-card__bio"
+    >
+      Product Manager passionate about user experience and agile methodologies.
+    </p>
+  </div>
+  <div
+    class="user-card__footer"
+  >
+    <button
+      aria-label="Contact Alice Johnson"
+      class="user-card__button"
+    >
+      Contact
+    </button>
+  </div>
+</div>
+`;
+
+exports[`UserCard Snapshot Tests renders user card without bio 1`] = `
+<div
+  class="user-card user-card--light"
+>
+  <div
+    class="user-card__header"
+  >
+    <div
+      class="user-card__avatar-placeholder"
+    >
+      V
+    </div>
+    <div
+      class="user-card__status"
+    >
+      <span
+        class="status-indicator status-indicator--active"
+      />
+      Active
+    </div>
+  </div>
+  <div
+    class="user-card__body"
+  >
+    <h2
+      class="user-card__name"
+    >
+      Victor Uma
+    </h2>
+    <p
+      class="user-card__role"
+    >
+      Senior Developer
+    </p>
+    <p
+      class="user-card__email"
+    >
+      <span
+        class="user-card__label"
+      >
+        Email:
+      </span>
+       
+      Victor.uma@example.com
+    </p>
+  </div>
+  <div
+    class="user-card__footer"
+  >
+    <button
+      aria-label="Contact Victor Uma"
+      class="user-card__button"
+    >
+      Contact
+    </button>
+  </div>
+</div>
+`;
+
+exports[`UserCard Snapshot Tests renders user card without email 1`] = `
+<div
+  class="user-card user-card--light"
+>
+  <div
+    class="user-card__header"
+  >
+    <div
+      class="user-card__avatar-placeholder"
+    >
+      V
+    </div>
+    <div
+      class="user-card__status"
+    >
+      <span
+        class="status-indicator status-indicator--active"
+      />
+      Active
+    </div>
+  </div>
+  <div
+    class="user-card__body"
+  >
+    <h2
+      class="user-card__name"
+    >
+      Victor Uma
+    </h2>
+    <p
+      class="user-card__role"
+    >
+      Senior Developer
+    </p>
+    <p
+      class="user-card__bio"
+    >
+      Senior Software Engineer with 10 years of experience in web development and technical writing.
+    </p>
+  </div>
+  <div
+    class="user-card__footer"
+  >
+    <button
+      aria-label="Contact Victor Uma"
+      class="user-card__button"
+    >
+      Contact
+    </button>
+  </div>
+</div>
+`;
+
+exports[`UserCard Snapshot Tests renders with onClick handler 1`] = `
+<div
+  class="user-card user-card--light"
+>
+  <div
+    class="user-card__header"
+  >
+    <div
+      class="user-card__avatar-placeholder"
+    >
+      V
+    </div>
+    <div
+      class="user-card__status"
+    >
+      <span
+        class="status-indicator status-indicator--active"
+      />
+      Active
+    </div>
+  </div>
+  <div
+    class="user-card__body"
+  >
+    <h2
+      class="user-card__name"
+    >
+      Victor Uma
+    </h2>
+    <p
+      class="user-card__role"
+    >
+      Senior Developer
+    </p>
+    <p
+      class="user-card__email"
+    >
+      <span
+        class="user-card__label"
+      >
+        Email:
+      </span>
+       
+      Victor.uma@example.com
+    </p>
+    <p
+      class="user-card__bio"
+    >
+      Senior Software Engineer with 10 years of experience in web development and technical writing.
+    </p>
+  </div>
+  <div
+    class="user-card__footer"
+  >
+    <button
+      aria-label="Contact Victor Uma"
+      class="user-card__button"
+    >
+      Contact
+    </button>
+  </div>
+</div>
+`;

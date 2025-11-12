@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="11" failures="0" errors="0" time="16.991">
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2025-10-06T19:41:44" time="4.607" tests="1">
+    <testcase classname=" renders app" name=" renders app" time="0.072">
+    </testcase>
+  </testsuite>
+  <testsuite name="UserCard Snapshot Tests" errors="0" failures="0" skipped="0" timestamp="2025-10-06T19:41:44" time="4.907" tests="9">
+    <testcase classname="UserCard Snapshot Tests renders complete user card with all props" name="UserCard Snapshot Tests renders complete user card with all props" time="0.179">
+    </testcase>
+    <testcase classname="UserCard Snapshot Tests renders user card in dark theme" name="UserCard Snapshot Tests renders user card in dark theme" time="0.021">
+    </testcase>
+    <testcase classname="UserCard Snapshot Tests renders user card without email" name="UserCard Snapshot Tests renders user card without email" time="0.014">
+    </testcase>
+    <testcase classname="UserCard Snapshot Tests renders user card without bio" name="UserCard Snapshot Tests renders user card without bio" time="0.015">
+    </testcase>
+    <testcase classname="UserCard Snapshot Tests renders minimal user card" name="UserCard Snapshot Tests renders minimal user card" time="0.014">
+    </testcase>
+    <testcase classname="UserCard Snapshot Tests renders user card without avatar" name="UserCard Snapshot Tests renders user card without avatar" time="0.013">
+    </testcase>
+    <testcase classname="UserCard Snapshot Tests renders empty state when no user provided" name="UserCard Snapshot Tests renders empty state when no user provided" time="0.005">
+    </testcase>
+    <testcase classname="UserCard Snapshot Tests renders inactive user" name="UserCard Snapshot Tests renders inactive user" time="0.013">
+    </testcase>
+    <testcase classname="UserCard Snapshot Tests renders with onClick handler" name="UserCard Snapshot Tests renders with onClick handler" time="0.012">
+    </testcase>
+  </testsuite>
+  <testsuite name="UserCard on LambdaTest" errors="0" failures="0" skipped="0" timestamp="2025-10-06T19:41:44" time="12.493" tests="1">
+    <testcase classname="UserCard on LambdaTest should load app" name="UserCard on LambdaTest should load app" time="1.805">
+    </testcase>
+  </testsuite>
+</testsuites>
