@@ -6,7 +6,7 @@ const UserCard = ({
   user,
   showEmail = true,
   showBio = true,
-  theme = "light",
+  theme = "dark",
   onContactClick,
 }) => {
   if (!user) {

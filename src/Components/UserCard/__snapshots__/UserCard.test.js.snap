@@ -76,7 +76,7 @@ exports[`UserCard Snapshot Tests renders empty state when no user provided 1`] =
 
 exports[`UserCard Snapshot Tests renders inactive user 1`] = `
 <div
-  class="user-card user-card--light"
+  class="user-card user-card--dark"
 >
   <div
     class="user-card__header"
@@ -140,7 +140,7 @@ exports[`UserCard Snapshot Tests renders inactive user 1`] = `
 
 exports[`UserCard Snapshot Tests renders minimal user card 1`] = `
 <div
-  class="user-card user-card--light"
+  class="user-card user-card--dark"
 >
   <div
     class="user-card__header"
@@ -263,7 +263,7 @@ exports[`UserCard Snapshot Tests renders user card in dark theme 1`] = `
 
 exports[`UserCard Snapshot Tests renders user card without avatar 1`] = `
 <div
-  class="user-card user-card--light"
+  class="user-card user-card--dark"
 >
   <div
     class="user-card__header"
@@ -327,7 +327,7 @@ exports[`UserCard Snapshot Tests renders user card without avatar 1`] = `
 
 exports[`UserCard Snapshot Tests renders user card without bio 1`] = `
 <div
-  class="user-card user-card--light"
+  class="user-card user-card--dark"
 >
   <div
     class="user-card__header"
@@ -386,7 +386,7 @@ exports[`UserCard Snapshot Tests renders user card without bio 1`] = `
 
 exports[`UserCard Snapshot Tests renders user card without email 1`] = `
 <div
-  class="user-card user-card--light"
+  class="user-card user-card--dark"
 >
   <div
     class="user-card__header"
@@ -439,7 +439,7 @@ exports[`UserCard Snapshot Tests renders user card without email 1`] = `
 
 exports[`UserCard Snapshot Tests renders with onClick handler 1`] = `
 <div
-  class="user-card user-card--light"
+  class="user-card user-card--dark"
 >
   <div
     class="user-card__header"

@@ -29,6 +29,90 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script>
+      // Suppress MetaMask errors before React loads
+      (function() {
+        const originalError = window.console.error;
+        window.console.error = function(...args) {
+          const errorMessage = args.join(" ");
+          if (
+            errorMessage.includes("Failed to connect to MetaMask") ||
+            errorMessage.includes("chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn") ||
+            errorMessage.includes("MetaMask")
+          ) {
+            return;
+          }
+          originalError.apply(console, args);
+        };
+
+        window.addEventListener("error", function(event) {
+          const errorMessage = event.message || event.filename || "";
+          if (
+            errorMessage.includes("Failed to connect to MetaMask") ||
+            errorMessage.includes("MetaMask") ||
+            errorMessage.includes("chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn")
+          ) {
+            event.preventDefault();
+            event.stopPropagation();
+            return false;
+          }
+        }, true);
+
+        window.addEventListener("unhandledrejection", function(event) {
+          const errorMessage = event.reason?.message || event.reason?.toString() || "";
+          if (
+            errorMessage.includes("Failed to connect to MetaMask") ||
+            errorMessage.includes("MetaMask") ||
+            errorMessage.includes("chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn")
+          ) {
+            event.preventDefault();
+            return false;
+          }
+        });
+
+        // Remove React error overlay if it shows MetaMask errors
+        const observer = new MutationObserver(function(mutations) {
+          const errorOverlay = document.querySelector('#react-error-overlay, [data-react-error-overlay]');
+          if (errorOverlay) {
+            const errorText = errorOverlay.textContent || errorOverlay.innerText || '';
+            if (
+              errorText.includes("Failed to connect to MetaMask") ||
+              errorText.includes("MetaMask") ||
+              errorText.includes("chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn")
+            ) {
+              errorOverlay.remove();
+            }
+          }
+        });
+
+        // Start observing when DOM is ready
+        if (document.body) {
+          observer.observe(document.body, { childList: true, subtree: true });
+        } else {
+          document.addEventListener('DOMContentLoaded', function() {
+            observer.observe(document.body, { childList: true, subtree: true });
+          });
+        }
+
+        // Also check periodically for error overlay
+        setInterval(function() {
+          const errorOverlay = document.querySelector('#react-error-overlay, [data-react-error-overlay], iframe[src*="react-error-overlay"]');
+          if (errorOverlay) {
+            const errorText = errorOverlay.textContent || errorOverlay.innerText || '';
+            if (
+              errorText.includes("Failed to connect to MetaMask") ||
+              errorText.includes("MetaMask") ||
+              errorText.includes("chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn")
+            ) {
+              errorOverlay.remove();
+              // Also try to remove the iframe if it exists
+              const iframe = document.querySelector('iframe[src*="react-error-overlay"]');
+              if (iframe) iframe.remove();
+            }
+          }
+        }, 100);
+      })();
+    </script>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
